@@ -1,0 +1,128 @@
+name: Docker
+description: Runs your build steps in Docker containers or other docker commands
+author: https://github.com/buildkite
+requirements:
+  - docker
+configuration:
+  properties:
+    add-host:
+      type: array
+    additional-groups:
+      type: array
+    always-pull:
+      type: boolean
+    chown:
+      type: boolean
+    chown-image:
+      type: string
+    command:
+      type: array
+    cpus:
+      type: string
+    debug:
+      type: boolean
+    device-read-bps:
+      type: array
+    device-read-iops:
+      type: array
+    device-write-bps:
+      type: array
+    device-write-iops:
+      type: array
+    entrypoint:
+      type: string
+    environment:
+      type: array
+    env-file:
+      type: array
+    env-propagation-list:
+      type: string
+    expand-image-vars:
+      type: boolean
+    image:
+      type: string
+    ipc:
+      type: string
+    leave-container:
+      type: boolean
+    load:
+      type: string
+    log-driver:
+      type: string
+    log-opt:
+      type: array
+    memory:
+      type: string
+    memory-swap:
+      type: string
+    memory-swappiness:
+      type: string
+    mount-buildkite-agent:
+      type: boolean
+    mount-ssh-agent:
+      type: [ boolean, string ]
+    mount-checkout:
+      type: boolean
+    network:
+      type: string
+    pid:
+      type: string
+    gpus:
+      type: string
+    runtime:
+      type: string
+    run-labels:
+      type: boolean
+    shell:
+      type: [boolean, array]
+    shm-size:
+      type: string
+    skip-checkout:
+      type: boolean
+    tty:
+      type: boolean
+    user:
+      type: string
+    userns:
+      type: string
+    volumes:
+      type: array
+    expand-volume-vars:
+      type: boolean
+    devices:
+      type: array
+    tmpfs:
+      type: array
+    workdir:
+      type: string
+    platform:
+      type: string
+    propagate-environment:
+      type: boolean
+    propagate-aws-auth-tokens:
+      type: boolean
+    propagate-gcp-auth-tokens:
+      type: boolean
+    propagate-uid-gid:
+      type: boolean
+    privileged:
+      type: boolean
+    publish:
+      type: array
+    init:
+      type: boolean
+    sysctls:
+      type: array
+    storage-opt:
+      type: string
+    add-caps:
+      type: array
+    drop-caps:
+      type: array
+    security-opts:
+      type: array
+    ulimits:
+      type: array
+  required:
+    - image
+  additionalProperties: false
