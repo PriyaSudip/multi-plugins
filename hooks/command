@@ -4,7 +4,7 @@ set -euo pipefail
 DIR="$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd)"
 
 
-source "$(dirname "${BASH_SOURCE[0]}")/../../lib/shared.sh"
+#source "$(dirname "${BASH_SOURCE[0]}")/../../lib/shared.sh"
 
 # shellcheck source=lib/shared.bash
 . "$DIR/../lib/shared.bash"
