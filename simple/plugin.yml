@@ -1,0 +1,10 @@
+name: Simple
+description: Simple plugin to test
+author: https://github.com/buildkite
+configuration:
+  properties:
+    name:
+      type: string
+  required:
+    - name
+  additionalProperties: false
